@@ -1,21 +1,6 @@
 {
-  "boards": [
-    {
-      "name": "My new board",
-      "user": 0,
-      "id": 78448769319,
-      "starred": false,
-      "created": "2020-11-07"
-    }
-  ],
+  "boards": [],
   "tasks": [],
   "users": [],
-  "lists": [
-    {
-      "boardId": 78448769319,
-      "title": "ersd",
-      "id": 70398153931,
-      "created": "2020-11-07"
-    }
-  ]
+  "lists": []
 }
