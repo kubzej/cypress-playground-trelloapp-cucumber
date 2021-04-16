@@ -9,6 +9,10 @@ export class MainPage{
         return cy.get('[class="Nav_user Nav_button"]').first()
     }
 
+    getLogOutButton(){
+        return cy.contains('Log out')
+    }
+
     getNewBoardButton(){
         return cy.get('#new-board')
     }
@@ -21,8 +25,18 @@ export class MainPage{
         return cy.contains('.Button', 'Save')
     }
 
+// ------------------------------------------------------------ END OF GETS
+
+    clickOnEmail(){
+        this.getEmailButton().click()
+    }
+
     clickOnLoginButton() {
         this.getLoginButton().click()
+    }
+
+    clickOnLogOutButton(){
+        this.getLogOutButton().click()
     }
 
     createNewBoard(boardName){
