@@ -1,8 +1,20 @@
 
 export class MainPage{
 
+    getBoardItem(){
+        return cy.get('.board_item')
+    }
+
+    getBoardTitle(){
+        return cy.get('.board_item > .board_title')
+    }
+
     getEmailButton(){
         return cy.get('[class="Nav_user Nav_button"]').eq(1)
+    }
+
+    getErrorMessage(){
+        return cy.get('#errorMessage')
     }
 
     getLoginButton(){
@@ -25,6 +37,10 @@ export class MainPage{
         return cy.contains('.Button', 'Save')
     }
 
+    getXButton(){
+        return cy.get('.board_options > .Cancel')
+    }
+
 // ------------------------------------------------------------ END OF GETS
 
     clickOnEmail(){
@@ -39,6 +55,18 @@ export class MainPage{
         this.getLogOutButton().click()
     }
 
+    clickOnNewBoardButton(){
+        this.getNewBoardButton().click()
+    }
+
+    clickOnSaveBoardButton(){
+        this.getSaveBoardButton().click()
+    }
+
+    clickOnXButton(){
+        this.getXButton().click()
+    }
+
     createNewBoard(boardName){
         this.getNewBoardButton().click()
         this.getNewBoardNameTextBox().type(boardName)
@@ -47,6 +75,10 @@ export class MainPage{
 
     navigate(){
         cy.visit('/')
+    }
+
+    openBoard(){
+        this.getBoardTitle().first().click()
     }
 
 }

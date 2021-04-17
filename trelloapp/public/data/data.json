@@ -1,12 +1,6 @@
 {
   "boards": [],
   "tasks": [],
-  "users": [
-    {
-      "email": "test@test.cz",
-      "password": "$2a$10$GB0daUZygSOlbCRgdB5JHuXVLo49MJ5tL53IHX53XYa4UDXY86cva",
-      "id": 1
-    }
-  ],
+  "users": [],
   "lists": []
 }
