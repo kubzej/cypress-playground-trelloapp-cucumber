@@ -1,5 +1,41 @@
 {
-  "boards": [],
+  "boards": [
+    {
+      "name": "w4r8baufd",
+      "user": 0,
+      "id": 28797480649,
+      "starred": true,
+      "created": "2021-04-19"
+    },
+    {
+      "name": "kias3bfqr",
+      "user": 0,
+      "id": 54300284875,
+      "starred": true,
+      "created": "2021-04-19"
+    },
+    {
+      "name": "hgpxj27xo",
+      "user": 0,
+      "id": 63747401783,
+      "starred": true,
+      "created": "2021-04-19"
+    },
+    {
+      "name": "ylvhymsg8n",
+      "user": 0,
+      "id": 80789452950,
+      "starred": true,
+      "created": "2021-04-19"
+    },
+    {
+      "name": "c4xbr1p532",
+      "user": 0,
+      "id": 9026816574,
+      "starred": true,
+      "created": "2021-04-19"
+    }
+  ],
   "tasks": [],
   "users": [],
   "lists": []

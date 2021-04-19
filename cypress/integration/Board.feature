@@ -61,3 +61,19 @@ Feature: Board
         When I open board
         And I delete board
         Then No board is created
+
+    Scenario: Stare board
+        Given Board "TEST board" created by request
+        When I stare board
+        Then Board "TEST board" is between starred boards
+
+    Scenario: Unstare board
+        Given Starred board "TEST board"
+        When I unstare board
+        Then Board "TEST board" is not between starred boards
+
+    Scenario: Stare more boards on same time
+        Given 5 boards created by request
+        When I stare 5 boards
+        Then 5 boards should be starred
+

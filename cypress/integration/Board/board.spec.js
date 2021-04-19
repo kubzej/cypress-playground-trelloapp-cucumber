@@ -6,8 +6,17 @@ Given('Board {string} created by request', function(name){
     onBoard.createNewBoardWithRequest(name)
 })
 
+Given('Starred board {string}', function(name) {
+    onBoard.createNewBoardWithRequest(name)
+    onMainPage.stareBoard()
+})
+
 Given('Stubbed error {int}', function(errorNumber){
     cy.intercept('POST', '/api/boards', {statusCode: errorNumber}).as('errorRequest')
+})
+
+Given('{int} boards created by request', function(number){
+    onMainPage.createMoreNewBoards(number)
 })
 
 // ------------------------------------------------------------ END OF GIVEN
@@ -42,6 +51,18 @@ When('I edit name of board to {string}', function(name){
 
 When('I delete board', () => {
     onBoard.deleteBoard()
+})
+
+When('I stare board', () => {
+    onMainPage.stareBoard()
+})
+
+When('I unstare board', () => {
+    onMainPage.unstareBoard()
+})
+
+When('I stare {int} boards', function(number){
+    onMainPage.stareMoreBoards(number)
 })
 
 // ------------------------------------------------------------ END OF WHEN
@@ -84,4 +105,16 @@ Then('Error message {int} is shown', function(errorCode){
 
 Then('Name of board is {string}', function(name){
     onBoard.getBoardTitle().should('have.value', name)
+})
+
+Then('Board {string} is between starred boards', function(name){
+    onMainPage.getStarredBoardTitle().should('have.text', name)
+})
+
+Then('Board {string} is not between starred boards', function(name){
+    onMainPage.getStarredBoardTitle().should('not.exist')
+})
+
+Then('{int} boards should be starred', function(number){
+    onMainPage.getStarredBoardTitle().should('have.length', number)
 })

@@ -36,8 +36,6 @@ export class Board{
         this.getBoardTitle().clear()
         this.getBoardTitle().type(name)
     }
-
-
     
 
 }
