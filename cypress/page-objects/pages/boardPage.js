@@ -34,7 +34,7 @@ export class Board{
 
     editNameofBoard(name){
         this.getBoardTitle().then(title => {
-            cy.wrap(title).clear()
+            cy.wrap(title).clear({"waitForAnimations": true})
             cy.wrap(title).type(name)
         })
     }
