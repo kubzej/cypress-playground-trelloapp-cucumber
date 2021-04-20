@@ -51,7 +51,7 @@ Feature: Board
 
         Examples:
             | boardName           | 
-            | This is a new name  |
+            | This is pasta  |
             |                     | 
             | 123456789           |
             | +ěščřžýáíé          |
