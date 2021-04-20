@@ -2,7 +2,7 @@
   "name": "tesena-cypress-workshop",
   "version": "1.0.0",
   "description": "Tesena workshop",
-  "main": "index.js",
+  "main": "../index.js",
   "scripts": {
     "start": "cd trelloapp && npm start"
   },
