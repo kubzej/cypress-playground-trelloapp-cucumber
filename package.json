@@ -4,7 +4,7 @@
   "description": "Tesena workshop",
   "main": "index.js",
   "scripts": {
-    "start": "cd trelloapp && npm start",
+    "start": "cd trelloapp && npm start"
   },
   "keywords": [
     "cypress",
