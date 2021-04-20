@@ -33,8 +33,10 @@ export class Board{
     }
 
     editNameofBoard(name){
-        this.getBoardTitle().clear()
-        this.getBoardTitle().type(name)
+        this,this.getBoardTitle().then(title => {
+            cy.wrap(title).clear()
+            cy.wrap(title).type(name)
+        })
     }
     
 
