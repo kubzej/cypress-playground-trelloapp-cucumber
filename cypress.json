@@ -2,5 +2,7 @@
   "baseUrl": "http://localhost:3000",
   "viewportWidth": 1200,
   "viewportHeight": 800,
-  "testFiles": "**/*.feature"
+  "testFiles": "**/*.feature",
+  "screenshotOnRunFailure": false,
+  "video": false
 }
